@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="u8w-v7-YiH">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NavigationCurso" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWz-q3-Rhg">
+                                <rect key="frame" x="156.66666666666666" y="408.66666666666669" width="80" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Tela 02">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="ucZ-2e-QGI" kind="show" id="WzY-oB-rSY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        <constraints>
+                            <constraint firstItem="eWz-q3-Rhg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5bY-2q-RFI"/>
+                            <constraint firstItem="eWz-q3-Rhg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="RQr-0L-9PX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="5rf-2P-sGJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1024" y="-27"/>
+        </scene>
+        <!--Tela 02-->
+        <scene sceneID="H26-8P-QoQ">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="ucZ-2e-QGI" customClass="Tela02ViewController" customModule="NavigationCurso" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5BA-vJ-iT7">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XFC-Sf-IIu">
+                                <rect key="frame" x="103.66666666666667" y="408.66666666666669" width="185.66666666666663" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Navegar para Tela 03"/>
+                                <connections>
+                                    <action selector="tappedGoToScreen02Button:" destination="ucZ-2e-QGI" eventType="touchUpInside" id="qO4-LH-Llz"/>
+                                    <segue destination="iLp-Cp-HoO" kind="show" id="gOp-hI-wPP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5Ha-FX-SJW"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="XFC-Sf-IIu" firstAttribute="centerY" secondItem="5BA-vJ-iT7" secondAttribute="centerY" id="5Xz-Xw-rig"/>
+                            <constraint firstItem="XFC-Sf-IIu" firstAttribute="centerX" secondItem="5BA-vJ-iT7" secondAttribute="centerX" id="fYl-tU-UBf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tela 02" id="jyr-nF-WEX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="26p-11-fXA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2040" y="-27"/>
+        </scene>
+        <!--Tela 03-->
+        <scene sceneID="cnm-gI-JQh">
+            <objects>
+                <viewController id="iLp-Cp-HoO" customClass="Tela03ViewController" customModule="NavigationCurso" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MiF-EW-JJb">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rKb-2m-22C">
+                                <rect key="frame" x="113.33333333333333" y="408.66666666666669" width="166.33333333333337" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Voltar para Tela 02"/>
+                                <connections>
+                                    <action selector="tappedGoToBack:" destination="iLp-Cp-HoO" eventType="touchUpInside" id="V8B-PA-vz5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5U6-bc-F1G"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <constraints>
+                            <constraint firstItem="rKb-2m-22C" firstAttribute="centerY" secondItem="MiF-EW-JJb" secondAttribute="centerY" id="6bI-db-lLE"/>
+                            <constraint firstItem="rKb-2m-22C" firstAttribute="centerX" secondItem="MiF-EW-JJb" secondAttribute="centerX" id="ra8-hG-PBC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tela 03" id="PTa-rf-1hE">
+                        <barButtonItem key="rightBarButtonItem" image="rectangle.portrait.and.arrow.right.fill" catalog="system" id="lG6-kC-81w">
+                            <connections>
+                                <action selector="tappedGoToRoot:" destination="iLp-Cp-HoO" id="am5-KA-9j3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sGW-pQ-JPT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3060" y="-27"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uQ3-db-Fcb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="u8w-v7-YiH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="t3q-Yp-XYG">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="eYF-hY-Loh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EI7-83-cMP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="17.557251908396946" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="rectangle.portrait.and.arrow.right.fill" catalog="system" width="128" height="108"/>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
